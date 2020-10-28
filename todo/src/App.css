@@ -1,0 +1,38 @@
+body,
+html,
+#root {
+  background-color: #1c1c1c;
+  height: 100%;
+  color: white;
+}
+
+.todo-form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+li {
+  text-align: initial;
+}
+
+.App {
+  text-align: center;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#border {
+  border-bottom: 1px solid rgb(255 255 255 / 42%);
+}
+
+#head {
+  margin-bottom: 1em;
+  border-radius: 0.2em 0.2em 0em 0em;
+  border: 0.01em solid;
+  border-color: white;
+  font-size: 7em;
+}
