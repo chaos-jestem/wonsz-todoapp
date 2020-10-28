@@ -3,7 +3,6 @@ import './App.css';
 import TodoForm from './components/TodoForm';
 import TodoList from './components/TodoList';
 import Typography from '@material-ui/core/Typography';
-import { Button, TextField } from "@material-ui/core";
 
 const LOCAL_STORAGE_KEY = "react-todo-list-todos";
 
