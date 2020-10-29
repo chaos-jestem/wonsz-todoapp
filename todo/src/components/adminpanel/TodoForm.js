@@ -19,7 +19,7 @@ function TodoForm({ addTodo }) {
         }
     }
     return(
-      <form style={{color: "white"}} onSubmit={handleSubmit}>
+      <form style={{color: "white", marginBottom: "0.6em"}} onSubmit={handleSubmit}>
           <TextField id="border"
             style={{color: "white"}}
             name="task"
@@ -27,7 +27,7 @@ function TodoForm({ addTodo }) {
             value={todo.task}
             onChange={handleTaskInputChange}
           />
-          <Button type="submit">submit</Button>
+          <Button type="submit">DODAJ</Button>
       </form>  
     );
 }

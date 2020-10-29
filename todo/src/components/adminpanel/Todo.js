@@ -11,20 +11,21 @@ function Todo({ todo, toggleComplete, removeTodo }) {
         removeTodo(todo.id);
     }
     return (
-        <ListItem style={{display: "flex"}}>
-            <Checkbox type="checkbox" onClick={handleCheckboxClick} />
+        <ListItem style={{display: "flex", float: "left", paddingTop: "0.1em", paddingBottom: "-0.6em" }}>
+            <IconButton onClick={handleRemoveClick}>
+                <CloseIcon />
+            </IconButton>
             <Typography
             variant="body1"
                 style={{
+                    textAlign: "left",
                     color: "white",
                     textDecoration: todo.completed ? "line-through" :null
                 }}
             >
                 {todo.task}
             </Typography>
-            <IconButton onClick={handleRemoveClick}>
-                <CloseIcon />
-            </IconButton>
+            <Checkbox type="checkbox" onClick={handleCheckboxClick} />
         </ListItem>
     );
 }
